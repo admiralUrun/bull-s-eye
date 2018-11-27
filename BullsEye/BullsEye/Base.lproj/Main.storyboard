@@ -122,13 +122,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXx-VZ-ONN">
-                                <rect key="frame" x="64" y="285" width="97" height="83"/>
+                                <rect key="frame" x="64" y="293" width="83" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Reset" image="media-repeat-alt">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="restartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kgj-kp-Zdg"/>
                                     <action selector="starNewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnC-U0-zw7"/>
                                 </connections>
                             </button>

@@ -69,6 +69,22 @@ class ViewController: UIViewController {
         let roundValue = slider.value.rounded()
         currentValue = Int(roundValue)
     }
+    
+    @IBAction func restartButton() {
+        let message = "Are you sure ?"
+        let alert = UIAlertController(title: "Gama will be restarted !!!", message: message, preferredStyle: .alert)
+        
+        let restar = UIAlertAction(title: "Sure", style: .default, handler: {
+            actioni in
+            self.startNewRound()
+        })
+        let backToGame = UIAlertAction(title: "NO, go back plz", style: .default , handler: nil)
+        
+        alert.addAction(restar)
+        alert.addAction(backToGame)
+        
+    }
+    
    
     func startNewRound () {
         score += givePoints(target: targetValue, current: currentValue)
@@ -99,7 +115,14 @@ class ViewController: UIViewController {
         roundsLable.text = String(roundVaulse)
     }
     
-    
+    func newGame() {
+        currentValue = 0
+        targetValue = 0
+        score = 0
+        roundVaulse = 0
+        
+        startNewRound()
+    }
     
     
     
