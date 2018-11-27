@@ -28,6 +28,13 @@ class ViewController: UIViewController {
         let roundValue = slider.value.rounded()
         currentValue = Int(roundValue)
         startNewRound()
+        
+        let thumbImageNormal = #imageLiteral(resourceName: "Probe 03")
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbImageHightted = #imageLiteral(resourceName: "Probe 03 copy")
+        slider.setThumbImage(thumbImageHightted, for: .highlighted)
+        
     }
 
     @IBAction func showAlert() {
