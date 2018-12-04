@@ -50,13 +50,11 @@ class ViewController: UIViewController {
             title = "Nope"
         }
         
-        
         let message = "The value of the slider is now \(currentValue)" + "\nThe target value : \(targetValue)"
         
         let warning = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Sure", style: .default, handler: {
-            actioni in
+        let action = UIAlertAction(title: "Sure", style: .default, handler: { xx -> Void in
             self.startNewRound()
         })
         
